@@ -46,6 +46,24 @@ export class TaskController {
                     res.status(400).json({name: e.name, message: e.message});
                 });
         });
+        this._router.get('/mode', (req, res) => {
+            this._service.modeAsync()
+                .then(content => {
+                    res.json(content);
+                })
+                .catch((e: Error) => {
+                    res.status(400).json({name: e.name, message: e.message});
+                });
+        });
+        this._router.get('/capacity', (req, res) => {
+            this._service.capacityAsync()
+                .then(content => {
+                    res.json(content);
+                })
+                .catch((e: Error) => {
+                    res.status(400).json({name: e.name, message: e.message});
+                });
+        });
         this._router.delete('/kill/:pid', (req, res) => {
             this._service.killAsync(req.params.pid as string)
                 .then(content => {
