@@ -1,6 +1,6 @@
 import {TaskAddDto, TaskItem} from "@yelmer-samples/iptiq-task-manager/dist/task-manager/interfaces";
 import {taskManager, TaskMode, TaskPriority} from "@yelmer-samples/iptiq-task-manager";
-import {KillListResponse, KillResponse, SizeResponse} from "./interfaces";
+import {KillListResponse, KillResponse, ModeResponse, SizeResponse} from "./interfaces";
 
 // noinspection JSUnusedGlobalSymbols
 export class TaskService {
@@ -12,6 +12,12 @@ export class TaskService {
     }
     async sizeAsync(): Promise<SizeResponse> {
         return {count: taskManager.size};
+    }
+    async modeAsync(): Promise<ModeResponse> {
+        return {mode: taskManager.mode};
+    }
+    async capacityAsync(): Promise<SizeResponse> {
+        return {count: taskManager.capacity};
     }
     async killAsync(pid: string): Promise<KillResponse> {
         return {isDeleted: taskManager.kill(pid)};

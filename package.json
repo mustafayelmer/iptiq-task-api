@@ -1,6 +1,6 @@
 {
   "name": "iptiq-task-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "repository": {
@@ -8,7 +8,8 @@
     "url": "git+https://github.com/mustafayelmer/iptiq-task-api.git"
   },
   "files": [
-    "dist/*"
+    "dist/*",
+    "assets/*"
   ],
   "scripts": {
     "clear": "rimraf dist",
