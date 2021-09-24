@@ -36,24 +36,6 @@ Call Task Manager component
 | HTTP_PORT | 8080 | Port value for web server |
 | NODE_ENV | prod | Environment type (prod, stage, test, dev, local)) |
 
-> Sample Endpoint
->
-`POST` `http://localhost:8080/v1/add`
-> Sample Payload
-````json
-{
-    "priority": "high"
-}
-````
-> Sample Response
-````json
-{
-    "createdAt": 1632515642364,
-    "pid": "de338029-2399-4ae9-90ad-6329a3236b0b",
-    "priority": "high"
-}
-````
-
 ## Samples
 
 ### Add
