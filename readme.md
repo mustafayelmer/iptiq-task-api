@@ -270,7 +270,7 @@ Call Task Manager component
 }
 ````
 
-### Prepare by
+### Prepared by
 - Mustafa Yelmer
 - mustafayelmer(at)gmail.com
 - `2021-09-21`
