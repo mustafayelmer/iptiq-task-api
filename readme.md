@@ -23,7 +23,7 @@ Call Task Manager component
 - ``helmet`` *handles header keys*
 
 ## Postman
-> You can find Postman export file at [go to test folder](./assets/) 
+> You can find Postman export file at [go to asset folder](./assets/) 
 
 ## Config
 > You can use `host` as `http://localhost:8080/v1` 
